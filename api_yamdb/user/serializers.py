@@ -29,5 +29,3 @@ class UserSerializer(serializers.ModelSerializer, UsernameSerializer):
             'bio',
             'role',
         )
-
-
