@@ -16,7 +16,7 @@ from api_yamdb.mixins import ListCreateDestroyViewSet
 from api_yamdb.permissions import (
     IsAdmin,
     IsAdminOwnerModeratorOrReadOnly,
-    ReadOnly
+    ReadOnly,
 )
 from reviews.filters import TitleFilter
 from reviews.models import Category, Genre, Review, Title

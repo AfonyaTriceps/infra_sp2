@@ -76,21 +76,16 @@ docker-compose exec web python manage.py dumpdata > fixtures.json
 docker-compose down -v
 ```
 
-## Описание команды для заполнения БД данными из csv:
+## Описание команды для заполнения БД данными из csv
 
 ```bash
 docker-compose exec web python manage.py load_csv
 ```
 
-### Шаблон наполнения .env, расположен в infra/.env
+### Для создания .env выполните
 
-```sh
-DB_ENGINE=django.db.backends.postgresql
-DB_NAME=postgres
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=postgres
-DB_HOST=db
-DB_PORT=5432
+```bash
+cp .env.example .env
 ```
 
 ### Документация API YaMDb
